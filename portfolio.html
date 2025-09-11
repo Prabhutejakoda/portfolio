@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigiC Byte Team Profile</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animate on Scroll -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+  background: linear-gradient(135deg, #28a5c8, #d3d3d3);
+
+
+
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .team-container {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      padding: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      transition: transform 0.4s, background 0.4s;
+      cursor: pointer;
+      width: 250px;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-12px) scale(1.05);
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .profile-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid rgba(255, 255, 255, 0.7);
+      transition: transform 0.3s;
+    }
+
+    .profile-card img:hover {
+      transform: rotate(5deg) scale(1.08);
+    }
+
+    .profile-card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.3rem;
+      color: #fff;
+    }
+
+    /* Role Badges */
+    .role {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #fff;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    }
+
+    .frontend { background: linear-gradient(135deg, #ff9a9e, #fad0c4); color: #222; }
+    .fullstack { background: linear-gradient(135deg, #00e0ff, #0083ff); }
+    .testing { background: linear-gradient(135deg, #a18cd1, #fbc2eb); color: #222; }
+
+    footer {
+      margin-top: 3rem;
+      padding: 1rem;
+      background: rgba(0,0,0,0.4);
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Chatbot button */
+    .chatbot-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, #00e0ff, #ff6ec4);
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      font-size: 28px;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+      z-index: 1000;
+    }
+
+    .chatbot-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 320px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      z-index: 1000;
+      color: #fff;
+      text-align: left;
+    }
+
+    .chat-popup h3 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .chat-popup .chat-section {
+      margin-top: 10px;
+    }
+
+    .chat-popup .chat-option {
+      background: rgba(0, 224, 255, 0.2);
+      padding: 10px;
+      border-radius: 10px;
+      margin: 8px 0;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.3s;
+      color: #fff;
+    }
+
+    .chat-popup .chat-option:hover {
+      background: rgba(0, 224, 255, 0.4);
+    }
+
+    .chat-popup .chat-answer {
+      display: none;
+      font-size: 14px;
+      margin-top: 6px;
+      padding: 8px;
+      border-left: 3px solid #00e0ff;
+      color: #d9f2ff;
+      background: rgba(255,255,255,0.08);
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down">Welcome to DigiCByte Team Portfolio</header>
+  <p data-aos="fade-up"><b>To Visit : </b><em> Please Tap on your Favourite profile</em></p>
+
+  <section class="team-container">
+    <div class="profile-card" onclick="location.href='yamini.html'" data-aos="zoom-in" data-aos-delay="100">
+      <img src="yamini.jpg" alt="Yamini">
+      <h3>Yamini</h3>
+      <span class="role frontend"> Frontend Developer</span>
+    </div>
+
+    <div class="profile-card" onclick="location.href='prabhu.html'" data-aos="zoom-in" data-aos-delay="200">
+      <img src="Prabhuteja.jpg" alt="Prabhuteja">
+      <h3>Prabhuteja</h3>
+      <span class="role fullstack"> Full Stack Developer</span>
+    </div>
+
+    <div class="profile-card" onclick="location.href='tanuja.html'" data-aos="zoom-in" data-aos-delay="300">
+      <img src="thanuja.png" alt="Tanuja">
+      <h3>Tanuja</h3>
+      <span class="role testing"> Testing Specialist</span>
+    </div>
+  </section>
+
+  <footer data-aos="fade-up">© 2025 Team Portfolio | Built with love DigiCByte</footer>
+
+  <!-- Floating Chatbot Button -->
+  <button class="chatbot-btn" onclick="toggleChat()">💬</button>
+
+  <!-- Chatbot Popup -->
+  <div class="chat-popup" id="chatPopup">
+    <h3> Hi, want to know us?</h3>
+
+    <div class="chat-section">
+      <b>👥 Team Members</b>
+      <div class="chat-option" onclick="location.href='yamini.html'">Yamini - Frontend Developer</div>
+      <div class="chat-option" onclick="location.href='prabhu.html'">Prabhuteja - Full Stack Developer</div>
+      <div class="chat-option" onclick="location.href='tanuja.html'">Tanuja - Testing</div>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.2); margin: 10px 0;">
+
+    <div class="chat-section">
+      <b> FAQs</b>
+      <div class="chat-option" onclick="toggleAnswer('faq1')">What is DigiCByte?</div>
+      <div id="faq1" class="chat-answer">DigiCByte is our collaborative portfolio team, showcasing skills in AI, Full Stack, and Testing.</div>
+
+      <div class="chat-option" onclick="toggleAnswer('faq2')">How to contact you?</div>
+      <div id="faq2" class="chat-answer">You can reach us via the "Contact" section in each profile page. </div>
+
+      <div class="chat-option" onclick="toggleAnswer('faq3')">What projects have you done?</div>
+      <div id="faq3" class="chat-answer">We’ve built AI/ML apps, responsive websites, and testing solutions. Check our project sections! </div>
+    </div>
+  </div>
+
+  <!-- AOS Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    function toggleChat() {
+      const chat = document.getElementById("chatPopup");
+      chat.style.display = (chat.style.display === "block") ? "none" : "block";
+    }
+
+    function toggleAnswer(id) {
+      const answer = document.getElementById(id);
+      answer.style.display = (answer.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
