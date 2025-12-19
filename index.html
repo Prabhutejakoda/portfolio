@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prabhuteja Koda | Portfolio</title>
+  <meta name="description" content="Portfolio of Prabhuteja Koda, a Full Stack Developer specializing in Node.js, Angular, NestJS, and Firebase.">
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="prabhu.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <div id="toastContainer"></div>
+
+  <header>
+     <div class="logo" >
+  <span>Software Dev</span>
+</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero" data-aos="fade-up">
+    <div class="hero-text">
+      <h3>Hello, It's Me</h3>
+      <h1 id="portfolio-name">Prabhuteja Koda</h1>
+      <h2>And I'm a <span class="typing" id="portfolio-role">Full Stack Developer</span></h2>
+      <p id="portfolio-bio">Junior Software Developer at DigiCByte Technologies. Specializing in Node.js, Angular, NestJS, and Firebase. MCA Graduate from Andhra University.</p>
+      <div class="social-icons">
+        <a href="https://github.com/Prabhutejakoda" target="_blank">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.415-4.033-1.415-.546-1.387-1.334-1.756-1.334-1.756-1.09-.745.082-.729.082-.729 1.204.085 1.838 1.237 1.838 1.237 1.07 1.834 2.805 1.304 3.492.997.108-.775.418-1.304.76-1.604-2.665-.305-5.466-1.334-5.466-5.932 0-1.311.47-2.381 1.237-3.22-.124-.304-.536-1.527.117-3.176 0 0 1.008-.323 3.3 1.23a11.5 11.5 0 0 1 3-.404c1.02.005 2.048.138 3 .404 2.288-1.553 3.294-1.23 3.294-1.23.656 1.65.243 2.873.12 3.176.77.839 1.237 1.909 1.237 3.22 0 4.61-2.807 5.625-5.48 5.921.43.374.814 1.102.814 2.222v3.293c0 .322.216.694.825.576C20.565 21.796 24 17.302 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/prabhuteja-koda-a86027231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22.225 0H1.771C.792 0 0 .774 0 1.728v20.543C0 23.224.792 24 1.77 24h20.452c.979 0 1.778-.774 1.778-1.729V1.728C24 .774 23.204 0 22.225 0zM7.09 20.452H3.54V9h3.55v11.452zM5.315 7.476a2.06 2.06 0 1 1 0-4.119 2.06 2.06 0 0 1 0 4.119zM20.455 20.452h-3.55v-5.567c0-1.33-.028-3.04-1.85-3.04-1.852 0-2.135 1.445-2.135 2.94v5.668h-3.55V9h3.41v1.56h.05c.475-.9 1.634-1.85 3.36-1.85 3.594 0 4.258 2.37 4.258 5.455v6.285z"/></svg>
+        </a>
+        <a href="mailto:Prabhutejakoda@gmail.com">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.103 0-2 .893-2 2v12c0 1.105.897 2 2 2h16c1.103 0 2-.895 2-2V6c0-1.107-.897-2-2-2zM20 8l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a><br>
+      </div><br>
+      <div class="hero-buttons">
+          <a href="#about" class="btn">More About Me</a>
+          <button class="btn btn-secondary" id="experienceUiBtn">Experience Our UI</button>
+          <button class="btn btn-secondary" id="backToOriginalBtn" style="display:none;">Back to Original</button>
+      </div>
+    </div>
+    <div class="photo-container" data-aos="zoom-in">
+  <img src="Prabhuteja.jpg" alt="Prabhuteja Koda" />
+<div class="position-text">
+  <span class="float-word" style="animation-delay: 0s">Full stack</span>
+  <span class="float-word" style="animation-delay: 0.3s">Developer</span>
+</div>
+</div>
+
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p id="portfolio-about">
+      I'm <b>Prabhuteja Koda</b>, a detail-oriented <b>Full Stack Developer</b> and <b>MCA graduate</b> (CGPA: 8.2) from Andhra University.
+      Currently working as a <b>Junior Software Developer at DigiCByte Technologies</b> (Aug 2025 – Present).
+      I specialize in building scalable web applications using <b>Node.js, NestJS, Angular, Swagger UI , API and Firebase</b>.
+      I also have a strong foundation in <b>Machine Learning and Deep Learning</b> using Python.
+      I have a proven track record of delivering end-to-end solutions from frontend interfaces to backend architecture.
+    </p>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="technical-skills glass">
+        <h3>Technical Skills</h3>
+        <div class="grid" id="portfolio-skills-grid">
+          <div class="skill-box" data-aos="fade-up" data-aos-delay="50"><div class="skill-name">Node.js & NestJS</div><div class="skill-level">85%</div></div>
+          <div class="skill-box" data-aos="fade-up" data-aos-delay="100"><div class="skill-name">Angular & TS</div><div class="skill-level">80%</div></div>
+          <div class="skill-box" data-aos="fade-up" data-aos-delay="150"><div class="skill-name">Python & AI/ML</div><div class="skill-level">75%</div></div>
+          <div class="skill-box" data-aos="fade-up" data-aos-delay="200"><div class="skill-name">Firebase & SQL</div><div class="skill-level">70%</div></div>
+          <div class="skill-box" data-aos="fade-up" data-aos-delay="250"><div class="skill-name">HTML5 & CSS3</div><div class="skill-level">85%</div></div>
+        </div>
+      </div>
+      <div class="professional-skills">
+        <h3>Professional Skills</h3>
+        <div class="circle" data-percent="90"><span>Creativity</span><small>90%</small></div>
+        <div class="circle" data-percent="80"><span>Teamwork</span><small>80%</small></div>
+        <div class="circle" data-percent="75"><span>Problem Solving</span><small>75%</small></div>
+        <div class="circle" data-percent="70"><span>Communication</span><small>70%</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <article class="project glass" data-aos="flip-left">
+        <h3>Railway & Bus Booking</h3>
+        <p>Developed core booking logic, seat availability modules, and real-time scheduling updates using Node.js & Angular.</p>
+        <div class="project-links"><span style="font-size:0.9rem; color:var(--muted);">Professional Project</span></div>
+      </article>
+      <article class="project glass" data-aos="flip-left" data-aos-delay="80">
+        <h3>E-commerce Platform</h3>
+        <p>Built scalable product catalogues, shopping cart functionality, and secure checkout flows.</p>
+        <div class="project-links"><span style="font-size:0.9rem; color:var(--muted);">Professional Project</span></div>
+      </article>
+      <article class="project glass" data-aos="flip-left" data-aos-delay="160">
+        <h3>Music Application</h3>
+        <p>Implemented audio streaming capabilities and user playlist management using cloud-based storage.</p>
+        <div class="project-links"><span style="font-size:0.9rem; color:var(--muted);">Professional Project</span></div>
+      </article>
+      <article class="project glass" data-aos="flip-left" data-aos-delay="240">
+        <h3>Threat Classification AI</h3>
+        <p>Deep learning framework to classify network traffic using TensorFlow/Keras and Streamlit.</p>
+        <div class="project-links"><a href="https://github.com/Prabhutejakoda" target="_blank">View on GitHub</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="education" data-aos="fade-up">
+    <h2>Education</h2>
+    <div class="cert-grid">
+      <div class="cert glass">
+        <h3>Master of Computer Applications (MCA)</h3>
+        <p>Andhra University | 2025</p>
+        <small>CGPA: 8.2</small>
+      </div>
+      <div class="cert glass">
+        <h3>Bachelor of Science (Maths, Chemistry, CS)</h3>
+        <p>Acharya Nagarjuna University | 2022</p>
+        <small>Percentage: 77%</small>
+      </div>
+      <div class="cert glass">
+        <h3>Intermediate (MPC)</h3>
+        <p>Sri Gowthami Junior College | 2019</p>
+        <small>GPA: 7.58</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" data-aos="fade-up">
+    <h2>Certifications & Internships</h2>
+    <div class="cert-grid">
+      <div class="cert glass">Python for Beginners - SimpliLearn</div>
+      <div class="cert glass">Career Essentials in Data Analysis - Microsoft & LinkedIn</div>
+    </div>
+  </section>
+
+  <section id="faq" data-aos="fade-up">
+    <h2>FAQ</h2>
+    <div class="faq-list">
+      <button class="faq-q">How can I see a live demo of your projects?</button>
+      <div class="faq-a">Use the "Live Demo" links in the Projects section — each project has a running demo link.</div>
+      <button class="faq-q">Do you accept collaboration or internships?</button>
+      <div class="faq-a">Yes — please contact me via the contact form or LinkedIn. I'm open to collaboration and internships.</div>
+      <button class="faq-q">What stack do you use for ML projects?</button>
+      <div class="faq-a">Mainly Python, TensorFlow, PyTorch for models and Flask/React for web integration.</div>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:prabhutejakoda@gmail.com">prabhutejakoda@gmail.com</a></p><br>
+    <p>Phone: +91 91771 60897</p><br>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/prabhuteja-koda-a86027231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Prabhuteja Koda</a></p><br>
+    <button class="contact-btn" onclick="openRecipientChoicePopup()">Get in Touch</button>
+  </section>
+  
+  
+  <div class="popup" id="recipientChoicePopup" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closeRecipientChoicePopup()" aria-label="Close">&times;</button>
+      <h2>Who would you like to contact ?</h2>
+        <div class="recipient-choices">
+            <button class="submit-btn" id="emailPrabhuBtn">Prabhuteja</button>
+        </div>
+    </div>
+  </div>
+
+
+
+  <div class="popup" id="popupForm" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup()" aria-label="Close">&times;</button>
+      <h2 id="contact-form-title">Contact me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" aria-label="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" aria-label="Your Email" required />
+        <textarea id="message" placeholder="Your Message" rows="5" aria-label="Your Message" required></textarea>
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+    </div>
+  </div>
+
+  
+  <!-- ui experience -->
+    <div class="popup" id="uiGeneratorPopup" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closeUiGeneratorPopup()" aria-label="Close">&times;</button>
+            <h2>Generate Your Portfolio UI</h2>
+            <form id="uiGeneratorForm">
+                <input type="text" id="gen-name" placeholder="Your Full Name" aria-label="Full Name" required />
+                <input type="text" id="gen-role" placeholder="Your Role (e.g., Web Developer)" aria-label="Role" required />
+                <textarea id="gen-bio" placeholder="A short bio about you" rows="3" aria-label="Short Bio" required></textarea>
+                 <textarea id="gen-about" placeholder="More detailed about section" rows="5" aria-label="Detailed About Section" required></textarea>
+                <input type="text" id="gen-skills" placeholder="Your Skills (comma-separated, e.g., HTML, CSS)" aria-label="Skills" required />
+                <button type="submit" class="submit-btn">Generate UI</button>
+            </form>
+        </div>
+    </div>
+
+  <div id="chatWidget">
+    <button id="chatToggle">Chat</button>
+    <div id="chatBox" aria-hidden="true">
+      <div id="chatLog"></div>
+      <input id="chatInput" placeholder="Ask something (e.g. demo, contact)" />
+      <button id="chatSend">Send</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Software Dev | Build with love by Prabhuteja</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="prabhu.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true, mirror: false });
+  </script>
+</body>
+</html>

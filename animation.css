@@ -1,0 +1,53 @@
+body {
+  background: #fff8e7; /* light pastel paper color */
+  color: #333333; /* softer text */
+  font-family: 'Patrick Hand', cursive, 'Poppins', sans-serif; /* casual handwriting font */
+}
+
+header {
+  background: #88c9bf; /* pastel mint */
+  border-bottom: 2px dashed #6ca0dc; /* doodle style border */
+}
+
+.btn {
+  background: linear-gradient(90deg, #f4a261, #f28c8c); /* pastel peach to coral gradient */
+  color: #333333;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(242, 140, 140, 0.3);
+  font-family: 'Patrick Hand', cursive;
+}
+
+.skill-box {
+  background: #f7f6f2; /* off-white background */
+  border: 1.5px dotted #9099a1; /* dotted border for doodling effect */
+  color: #6ca0dc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+  box-shadow: 0 8px 20px rgba(140, 200, 207, 0.4);
+  transform: translateY(-8px) scale(1.05);
+}
+
+/* Links */
+a {
+  color: #6ca0dc;
+  text-decoration: underline dotted;
+}
+
+a:hover {
+  color: #f28c8c;
+  text-decoration: none;
+}
+
+/* FAQ questions to have underline and subtle hand-drawn bottom border */
+.faq-q {
+  border-bottom: 1.5px dashed #6ca0dc;
+  font-family: 'Patrick Hand', cursive;
+  cursor: pointer;
+}
+
+/* Change shadows to pastel */
+.box-shadow-soft {
+  box-shadow: 0 5px 15px rgba(140, 200, 207, 0.3);
+}
